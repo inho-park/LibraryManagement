@@ -5,7 +5,7 @@ import java.sql.Date;
 public class MemberVO {
     private String name;
     private String id;
-    private String pw;
+    private String password;
     private String phone;
 
     private String bno_list;
@@ -26,12 +26,12 @@ public class MemberVO {
         this.id = id;
     }
 
-    public String getPw() {
-        return pw;
+    public String getPassword() {
+        return password;
     }
 
-    public void setPw(String pw) {
-        this.pw = pw;
+    public void setPassword(String password) {
+        this.password = password;
     }
 
     public String getPhone() {
