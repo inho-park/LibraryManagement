@@ -13,27 +13,28 @@ public class Main {
     private static Scanner sc = new Scanner(System.in);
     private static Connection con;
     private static BookController bookController;
+    private static String name;
     public static void main(String[] args) {
         System.out.println("다니합작시 램그로프 리관 서도");
         // ConnectionPool 생성
         getConnectionPool();
         MemberMapper.con = con;
         // 입력값
-        int num1;
+        int num;
         while(true) {
             System.out.println("1) Login \t2) Join \t3) Exit");
             System.out.print(">> ");
-            num1 = sc.nextInt();
-            if (num1 == 1){
-                String name = MemberController.loginPage(sc);
+            num = sc.nextInt();
+            if (num == 1){
+                name = MemberController.loginPage(sc);
                 if (name.equals("")) {
                     System.out.println("없는 아이디임다");
                 }else {
                     MemberController.homePage(sc);
                 }
-            }else if (num1 == 2) {
-
-            }else if (num1 == 3) {
+            }else if (num == 2) {
+                MemberController.signupPage(sc);
+            }else if (num == 3) {
                 System.out.println("ㅓㅏㄴㅁㅇ러;미ㅑㄷ러;ㅐ뫃ㄴ맣ㅁㄴ하ㅓ");
                 freeConnectionPool();
                 break;
