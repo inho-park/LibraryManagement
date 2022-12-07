@@ -21,6 +21,7 @@ public class MemberController {
     }
 
     public static void homePage(Scanner sc) {
+        // 아무개
         int num;
         while(true){
             System.out.println("1) 책 목록보기\t 2) 책 검색\t 3) 책 대여 \t 4) 책 반납\t 5) 로그 아웃");
@@ -28,7 +29,7 @@ public class MemberController {
             switch(num) {
                 case 1:
                 {
-
+                    
                 }
                 case 2:
                 {
